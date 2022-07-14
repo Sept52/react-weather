@@ -1,0 +1,42 @@
+{
+    "header": {
+        "input_city": "Enter a city...",
+        "language": "Language"
+    },
+
+    "this_day": {
+        "today": "Today",
+        "time": "Time",
+        "city": "City"
+    },
+    
+    "this_dat_info": {
+        "temp": "Temperature",
+        "temp_value": "feels like",
+        "pressure": "Pressure",
+        "pressure_value": "mm",
+        "humidity": "Precipitation",
+        "speed": "Wind",
+        "speed_value": "m/s"
+    },
+
+    "days": {
+        "speed_value": "m/s"
+    },
+
+    "tabs": {
+        "three_days": "For 3 days",
+        "five_days": "For 5 days",
+        "cansel": "Cansel"
+    },
+
+    "card": {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday"
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "header": {
+        "input_city": "Введите город...",
+        "language": "Язык"
+    },
+
+    "this_day": {
+        "today": "Сегодня",
+        "time": "Время",
+        "city": "Город"
+    },
+    
+    "this_dat_info": {
+        "temp": "Температура",
+        "temp_value": "ощущается как",
+        "pressure": "Давление",
+        "pressure_value": "мм",
+        "humidity": "Осадки",
+        "speed": "Ветер",
+        "speed_value": "м/с"
+    },
+
+    "days": {
+        "speed_value": "м/с"
+    },
+
+    "tabs": {
+        "three_days": "На 3 дня",
+        "five_days": "На 5 дня",
+        "cansel": "Отмена"
+    },
+
+    "card": {
+        "monday": "Понедельник",
+        "tuesday": "Вторник",
+        "wednesday": "Среда",
+        "thursday": "Четверг",
+        "friday": "Пятница",
+        "saturday": "Суббота",
+        "sunday": "Воскресенье"
+    }
+}

@@ -1,0 +1,27 @@
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.skeletonThisDayInfo {
+    max-width: 750px;
+    min-height: 307px;
+}
+
+
+@media (max-width: 760px) {
+    .wrapper {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .skeletonThisDayInfo {
+        max-width: 600px;
+       
+    }
+    .skeletonThisDay {
+        height: 263px;
+    }
+    
+}
