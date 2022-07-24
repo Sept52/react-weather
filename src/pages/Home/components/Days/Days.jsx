@@ -9,23 +9,23 @@ import SkeletonThisCards from '../../SkeletonThisCards';
 
 function Days() {
   const [data, setData] = useState([]);
-  const [city, setCity] = useState(storage.getItem('gorod'));
+  const [city, setCity] = useState(storage.getItem("gorod"));
 
   setInterval(() => {
-    setCity(storage.getItem('gorod'));
+    setCity(storage.getItem("gorod"));
 
-    const input = document.getElementById('input-city');
-    if (localStorage.getItem('state') === 'false') {
-      input.style.boxShadow = '';
+    const input = document.getElementById("input-city");
+    if (localStorage.getItem("state") === "false") {
+      input.style.boxShadow = "";
     } else {
-      input.style.boxShadow = '0px 0px 18px 7px rgba(251, 0, 0, 0.5)';
+      input.style.boxShadow = "0px 0px 18px 7px rgba(251, 0, 0, 0.5)";
     }
   }, 1000);
 
   const func = (value) => {
-    if (value === '3' && success) {
+    if (value === "3" && success) {
       setData(threeDays);
-    } else if (value === '5' && success) {
+    } else if (value === "5" && success) {
       setData(fiveDays);
     } else {
       setData([]);

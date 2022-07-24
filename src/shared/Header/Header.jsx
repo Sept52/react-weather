@@ -4,22 +4,21 @@ import { ThemeContext } from '../../context/ThemeContext';
 import s from './Header.module.scss';
 import { storage } from '../../model/Storage';
 import { useTranslation } from 'react-i18next';
-import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import classNames from 'classnames';
-
+import 'babel-polyfill';
 function Header() {
   const { theme, changeThemee } = useContext(ThemeContext);
   const { t, i18n } = useTranslation();
-  const [language, setLanguage] = useState('');
+  const [language, setLanguage] = useState("");
 
-  const [currentCountry, setCurrentCountry] = useState(storage.getItem('gorod') || 'Могилёв');
+  const [currentCountry, setCurrentCountry] = useState(storage.getItem("gorod") || "Могилёв");
 
   function changeTheme() {
-    changeThemee(theme === 'light' ? 'dark' : 'light');
+    changeThemee(theme === "light" ? "dark" : "light");
   }
 
   const handleChange = (e) => {
@@ -27,7 +26,7 @@ function Header() {
   };
 
   useEffect(() => {
-    storage.setItem('gorod', currentCountry);
+    storage.setItem("gorod", currentCountry);
   }, [currentCountry]);
 
   const changeLanguage = (lang) => {
@@ -52,28 +51,28 @@ function Header() {
           className={s.find__city}
           type="text"
           onChange={handleChange}
-          placeholder={t('header.input_city')}
+          placeholder={t("header.input_city")}
         />
         <div className={s.theme__and__language}>
           <div className={s.change_theme} onClick={changeTheme}>
             <GlobalSvgSelector id="change-theme" />
           </div>
 
-          <FormControl sx={{ m: 1, minWidth: 120 }} size="small" style={{ marginLeft: '20px' }}>
+          <FormControl sx={{ m: 1, minWidth: 120 }} size="small" style={{ marginLeft: "20px" }}>
             <InputLabel className={s.language__input} id="demo-select-small">
-              {t('header.language')}
+              {t("header.language")}
             </InputLabel>
             <Select
               className={s.language__select}
               labelId="demo-select-small"
               id="demo-simple-select"
               value={language}
-              label={t('header.language')}
+              label={t("header.language")}
               onChange={handleChangeLanguage}>
-              <MenuItem onClick={() => changeLanguage('ru')} value={10}>
+              <MenuItem onClick={() => changeLanguage("ru")} value={10}>
                 Русский
               </MenuItem>
-              <MenuItem onClick={() => changeLanguage('en')} value={20}>
+              <MenuItem onClick={() => changeLanguage("en")} value={20}>
                 English
               </MenuItem>
             </Select>

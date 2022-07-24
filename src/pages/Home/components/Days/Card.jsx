@@ -12,13 +12,13 @@ function Card(Props) {
   const { t } = useTranslation();
 
   const arr = [
-    `${t('card.sunday')}`,
-    `${t('card.monday')}`,
-    `${t('card.tuesday')}`,
-    `${t('card.wednesday')}`,
-    `${t('card.thursday')}`,
-    `${t('card.friday')}`,
-    `${t('card.saturday')}`,
+    `${t("card.sunday")}`,
+    `${t("card.monday")}`,
+    `${t("card.tuesday")}`,
+    `${t("card.wednesday")}`,
+    `${t("card.thursday")}`,
+    `${t("card.friday")}`,
+    `${t("card.saturday")}`,
   ];
 
   return (
@@ -31,7 +31,7 @@ function Card(Props) {
           alt="weather-icon"
         />
       </div>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div style={{ display: "flex", justifyContent: "center" }}>
         <div className={s.item}>
           <div className={s.indicator}>
             <IndicatorSvgSelector id="temp" />
@@ -48,7 +48,7 @@ function Card(Props) {
           <div className={s.indicator}>
             <IndicatorSvgSelector id="wind" />
           </div>
-          {Props.day.wind.speed} {t('this_dat_info.speed_value')}
+          {Props.day.wind.speed} {t("this_dat_info.speed_value")}
         </div>
       </div>
     </div>

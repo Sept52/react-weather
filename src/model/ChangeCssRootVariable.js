@@ -1,12 +1,12 @@
 export function ChangeCssRootVariable(theme) {
-  const root = document.querySelector(':root');
+  const root = document.querySelector(":root");
 
   const components = [
-    'body-background',
-    'components-background',
-    'card-background',
-    'card-shadow',
-    'text-color',
+    "body-background",
+    "components-background",
+    "card-background",
+    "card-shadow",
+    "text-color",
   ];
 
   components.forEach((component) => {

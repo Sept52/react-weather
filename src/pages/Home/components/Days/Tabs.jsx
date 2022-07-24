@@ -7,21 +7,21 @@ function Tabs({ onClick }) {
   const { t } = useTranslation();
   const tabs = [
     {
-      value: `${t('tabs.three_days')}`,
+      value: `${t("tabs.three_days")}`,
       func: () => {
-        onClick('3');
+        onClick("3");
       },
     },
     {
-      value: `${t('tabs.five_days')}`,
+      value: `${t("tabs.five_days")}`,
       func: () => {
-        onClick('5');
+        onClick("5");
       },
     },
   ];
 
   const close = () => {
-    onClick('0');
+    onClick("0");
   };
 
   return (
@@ -36,7 +36,7 @@ function Tabs({ onClick }) {
         })}
       </div>
       <div onClick={close} className={s.cansel}>
-        {t('tabs.cansel')}
+        {t("tabs.cansel")}
       </div>
     </div>
   );

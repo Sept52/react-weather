@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function GlobalSvgSelector(Props) {
   switch (Props.id) {
-    case 'header-logo':
+    case "header-logo":
       return (
         <svg
           width="65"
@@ -44,7 +44,7 @@ export default function GlobalSvgSelector(Props) {
           />
         </svg>
       );
-    case 'change-theme':
+    case "change-theme":
       return (
         <svg
           width="35"

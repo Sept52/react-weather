@@ -9,6 +9,7 @@ function App() {
     <Suspense fallback={'...'}>
       <div className="container">
         <Header />
+        
         <Routes>
           <Route path="/" exact element={<Home />} />
         </Routes>

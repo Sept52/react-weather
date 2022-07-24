@@ -11,10 +11,10 @@ import SkeletonThisDay from './SkeletonThisDay';
 import SkeletonThisDayInfo from './SkeletonThisDayInfo';
 
 function Home() {
-  const [city, setCity] = useState(storage.getItem('gorod'));
+  const [city, setCity] = useState(storage.getItem("gorod"));
 
   setInterval(() => {
-    setCity(storage.getItem('gorod'));
+    setCity(storage.getItem("gorod"));
   }, 1000);
 
   const { info, loading } = useSelector((state) => {

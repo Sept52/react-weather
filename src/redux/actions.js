@@ -15,18 +15,18 @@ export const getInfo = () => {
     axios
       .get(
         `https://api.openweathermap.org/data/2.5/weather?q=${storage.getItem(
-          'gorod',
+          "gorod",
         )}&lang=ru&units=metric&appid=e688d27a66d1e2055217d3bd32dc027b`,
       )
       .then((res) => {
-        localStorage.setItem('state', 'false');
+        localStorage.setItem("state", "false");
         dispatch({
           type: INFO_WEATHER_SUCCESS,
           payload: res.data,
         });
       })
       .catch((err) => {
-        localStorage.setItem('state', 'true');
+        localStorage.setItem("state", "true");
         dispatch({
           type: INFO_WEATHER_ERROR,
           payload: err,
@@ -41,14 +41,14 @@ export const getInfoForFewDays = () => {
     axios
       .get(
         `https://api.openweathermap.org/data/2.5/forecast?q=${storage.getItem(
-          'gorod',
+          "gorod",
         )}&APPID=e688d27a66d1e2055217d3bd32dc027b`,
       )
       .then((res) => {
         dispatch({
           type: INFO_WEATHER_FEW_DAYS_SUCCESS,
-          payload: res.data.list.filter((reading) => reading.dt_txt.includes('18:00:00')),
-          fiveDays: res.data.list.filter((reading) => reading.dt_txt.includes('18:00:00')),
+          payload: res.data.list.filter((reading) => reading.dt_txt.includes("18:00:00")),
+          fiveDays: res.data.list.filter((reading) => reading.dt_txt.includes("18:00:00")),
         });
       })
       .catch((err) => {

@@ -2,7 +2,7 @@ import React from 'react';
 
 function IndicatorSvgSelector(Props) {
   switch (Props.id) {
-    case 'temp':
+    case "temp":
       return (
         <svg
           width="25"
@@ -75,7 +75,7 @@ function IndicatorSvgSelector(Props) {
           </defs>
         </svg>
       );
-    case 'pressure':
+    case "pressure":
       return (
         <svg
           width="19"
@@ -118,7 +118,7 @@ function IndicatorSvgSelector(Props) {
           </defs>
         </svg>
       );
-    case 'precipitation':
+    case "precipitation":
       return (
         <svg
           width="19"
@@ -156,7 +156,7 @@ function IndicatorSvgSelector(Props) {
           />
         </svg>
       );
-    case 'wind':
+    case "wind":
       return (
         <svg
           width="20"

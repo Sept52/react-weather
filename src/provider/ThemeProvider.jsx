@@ -4,12 +4,12 @@ import { ChangeCssRootVariable } from '../model/ChangeCssRootVariable';
 import { storage } from '../model/Storage';
 
 const ThemeProvider = ({ children, ...props }) => {
-  const [theme, setTheme] = useState(storage.getItem('theme') || 'light');
+  const [theme, setTheme] = useState(storage.getItem("theme") || "light");
 
   ChangeCssRootVariable(theme);
 
   function changeThemee(theme) {
-    storage.setItem('theme', theme);
+    storage.setItem("theme", theme);
     setTheme(theme);
     ChangeCssRootVariable(theme);
   }
